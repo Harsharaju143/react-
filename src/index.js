@@ -3,18 +3,19 @@ import { createRoot } from 'react-dom/client';
 
 //import App from './App';
 function FavoriteColor() {
-  const [color, setColor] = useState("red");
+  const [color, setColor] = useState('red');
 
   return (
     <>
       <h1>My favorite color is {color}!</h1>
-      <button
-        type="button"
-        onClick={() => setColor("blue")}
-      >Blue</button>
+      <button type="button" onClick={() => setColor('blue')}>
+        Blue
+      </button>
     </>
-  )
+  );
 }
+
+console.log('hello world');
 
 const rootElement = document.getElementById('root');
 const root = createRoot(rootElement);
